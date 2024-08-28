@@ -1,0 +1,94 @@
+﻿<Window x:Class="WordleWpfApp.GameAchievementsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordleWpfApp"
+        mc:Ignorable="d"
+        Title="Game Achievements" ResizeMode="NoResize" Height="300" Width="330">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="245" Margin="10,10,0,0" VerticalAlignment="Top" Width="300">
+            <TabItem Header="Gameplay">
+                <Grid x:Name="gridGameplay" Background="#FFE5E5E5">
+                    <!-- low hanging fruit achievement -->
+                    <Rectangle Name="LowHangingFruitRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="275"/>
+                    <Label x:Name="LowHangingFruitSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="LowHangingFruitTitle" Content="Low Hanging Fruit" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray"/>
+                    <Label x:Name="LowHangingFruitDesc" Content="Open the achievements window." HorizontalAlignment="Left" Margin="50,26,0,0" VerticalAlignment="Top" Foreground="LightGray"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Wins">
+                <Grid x:Name="gridWins" Background="#FFE5E5E5">
+                    <!-- n00b achievement -->
+                    <Rectangle x:Name="N00bRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="275"/>
+                    <Label x:Name="N00bSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="N00bTitle" Content="N00b" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray"/>
+                    <Label x:Name="N00bDesc" Content="Win 1 game." HorizontalAlignment="Left" Margin="50,26,0,0" VerticalAlignment="Top" Foreground="LightGray"/>
+                    <!-- slow and steady achievement -->
+                    <Rectangle x:Name="SlowSteadyRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,60,0,0" Stroke="Black" VerticalAlignment="Top" Width="275"/>
+                    <Label x:Name="SlowSteadySymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="SlowSteadyTitle" Content="Slow and Steady" HorizontalAlignment="Left" Margin="50,60,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray"/>
+                    <Label x:Name="SlowSteadyDesc" Content="Win 10 games." HorizontalAlignment="Left" Margin="50,76,0,0" VerticalAlignment="Top" Foreground="LightGray"/>
+                    <!-- relentless achievement -->
+                    <Rectangle x:Name="RelentlessRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,110,0,0" Stroke="Black" VerticalAlignment="Top" Width="275"/>
+                    <Label x:Name="RelentlessSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="RelentlessTitle" Content="Relentless" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray"/>
+                    <Label x:Name="RelentlessDesc" Content="Win 100 games." HorizontalAlignment="Left" Margin="50,126,0,0" VerticalAlignment="Top" Foreground="LightGray"/>
+                    <!-- p0wned achievement -->
+                    <Rectangle x:Name="P0wndRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="275"/>
+                    <Label x:Name="P0wndSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="P0wndTitle" Content="Pwned" HorizontalAlignment="Left" Margin="50,160,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray"/>
+                    <Label x:Name="P0wndDesc" Content="Win 1000 games." HorizontalAlignment="Left" Margin="50,176,0,0" VerticalAlignment="Top" Foreground="LightGray"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Streaks">
+                <Grid x:Name="gridStreaks" Background="#FFE5E5E5">
+                    <!-- getting the hang of it achievement -->
+                    <Rectangle x:Name="GettingHangOfItRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" Grid.ColumnSpan="2"/>
+                    <Label x:Name="GettingHangOfItSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="GettingHangOfItTitle" Content="Getting The Hang Of It" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <Label x:Name="GettingHangOfItDesc" Content="Achieve a 5-game win streak." HorizontalAlignment="Left" Margin="50,26,0,0" VerticalAlignment="Top" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <!-- look ma no hands achievement -->
+                    <Rectangle x:Name="LookMaNoHandsRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,60,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" Grid.ColumnSpan="2"/>
+                    <Label x:Name="LookMaNoHandsSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="LookMaNoHandsTitle" Content="Look Ma! No Hands" HorizontalAlignment="Left" Margin="50,60,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <Label x:Name="LookMaNoHandsDesc" Content="Achieve a 10-game win streak." HorizontalAlignment="Left" Margin="50,76,0,0" VerticalAlignment="Top" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <!-- eyes closed achievement -->
+                    <Rectangle x:Name="EyesClosedRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,110,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" Grid.ColumnSpan="2"/>
+                    <Label x:Name="EyesClosedSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="EyesClosedTitle" Content="Did That With My Eyes Closed" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <Label x:Name="EyesClosedDesc" Content="Achieve a 100-game win streak." HorizontalAlignment="Left" Margin="50,126,0,0" VerticalAlignment="Top" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <!-- unbreakable achievement -->
+                    <Rectangle x:Name="UnbreakableRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" Grid.ColumnSpan="2"/>
+                    <Label x:Name="UnbreakableSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="UnbreakableTitle" Content="Unbreakable" HorizontalAlignment="Left" Margin="50,160,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <Label x:Name="UnbreakableDesc" Content="Achieve a 500-game win streak." HorizontalAlignment="Left" Margin="50,176,0,0" VerticalAlignment="Top" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Guesses">
+                <Grid x:Name="gridGuesses" Background="#FFE5E5E5">
+                    <!-- god mode achievement -->
+                    <Rectangle x:Name="GodModeRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" Grid.ColumnSpan="2"/>
+                    <Label x:Name="GodModeSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="GodModeTitle" Content="God Mode" HorizontalAlignment="Left" Margin="50,10,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <Label x:Name="GodModeDesc" Content="Win a game with 1 guess." HorizontalAlignment="Left" Margin="50,26,0,0" VerticalAlignment="Top" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <!-- look ma no hands achievement -->
+                    <Rectangle x:Name="EagleRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,60,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" Grid.ColumnSpan="2"/>
+                    <Label x:Name="EagleSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="EagleTitle" Content="The Eagle Has Landed" HorizontalAlignment="Left" Margin="50,60,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <Label x:Name="EagleDesc" Content="Win a game with 2 guesses." HorizontalAlignment="Left" Margin="50,76,0,0" VerticalAlignment="Top" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <!-- eyes closed achievement -->
+                    <Rectangle x:Name="BirdieRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,110,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" Grid.ColumnSpan="2"/>
+                    <Label x:Name="BirdieSymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="BirdieTitle" Content="One Stroke Under Par" HorizontalAlignment="Left" Margin="50,110,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <Label x:Name="BirdieDesc" Content="Win a game with 3 guesses." HorizontalAlignment="Left" Margin="50,126,0,0" VerticalAlignment="Top" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <!-- unbreakable achievement -->
+                    <Rectangle x:Name="DoubleBogeyRect" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="45" Margin="10,160,0,0" Stroke="Black" VerticalAlignment="Top" Width="275" Grid.ColumnSpan="2"/>
+                    <Label x:Name="DoubleBogeySymbol" Content="🚫" HorizontalAlignment="Left" Margin="10,160,0,0" VerticalAlignment="Top" FontSize="24" Foreground="LightGray"/>
+                    <Label x:Name="DoubleBogeyTitle" Content="Whew! That Was Close" HorizontalAlignment="Left" Margin="50,160,0,0" VerticalAlignment="Top" FontSize="16" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                    <Label x:Name="DoubleBogeyDesc" Content="Win a game with 6 guesses." HorizontalAlignment="Left" Margin="50,176,0,0" VerticalAlignment="Top" Foreground="LightGray" Grid.ColumnSpan="2"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
